@@ -1,0 +1,1 @@
+{"record":"decision","decisionId":"demo-000042","status":"DENY","violatedRule":"payee_not_in_allowlist:supplier:evil","subject":"agent:demo-northwind","ts":"2026-07-18T12:00:00.000Z"}

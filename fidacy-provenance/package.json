@@ -1,0 +1,8 @@
+{
+  "name": "fidacy-provenance-vectors",
+  "private": true,
+  "type": "module",
+  "description": "Conformance vectors for the decision-provenance claim type of the UCP external-verifier envelope",
+  "scripts": { "gen": "node gen-vectors.mjs" },
+  "dependencies": { "jose": "^5.9.6" }
+}

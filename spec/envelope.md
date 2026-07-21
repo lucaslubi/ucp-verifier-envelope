@@ -177,7 +177,9 @@ script (`npm i && node cross-verify.mjs`).
 | signal | claim type | scope | alg | `typ` | profile |
 |---|---|---|---|---|---|
 | `llc.facet.kya` | identity | agent | ES256 (P-256) | `kya+jwt` | [claim-types/identity.md](claim-types/identity.md) |
-| `com.fidacy.trust_verdict` | risk | session | EdDSA (Ed25519) | `application/vc+jws` | [`../fidacy-risk/`](../fidacy-risk/) |
+| `com.fidacy.trust_verdict` | risk | session | EdDSA (Ed25519) | `application/vc+jws` | [claim-types/risk.md](claim-types/risk.md) |
+| `com.fidacy.decision_provenance` | decision-provenance | record | EdDSA (Ed25519) | `fidacy-artifact-receipt+jws` | [claim-types/decision-provenance.md](claim-types/decision-provenance.md) |
 
-Two independent claim types verify under the envelope today, which is the bar for
-graduating the envelope from vendor-namespaced to a core, neutrally-owned spec.
+Three claim types are registered with runnable vector sets; two issuers verify
+under the envelope end to end today, which is the bar for graduating the envelope
+from vendor-namespaced to a core, neutrally-owned spec.
